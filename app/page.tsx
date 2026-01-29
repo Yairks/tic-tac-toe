@@ -5,8 +5,8 @@ import { useState } from 'react';
 
 export default function Page() {
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
-            <div className="flex text-[8lvh] font-bold text-blue-900 justify-center">Tic-Tac-Toe</div>
+        <div className="flex flex-col items-center h-screen">
+            <div className="flex text-[8lvh] font-bold text-blue-900 pt-[5lvh]">Tic-Tac-Toe</div>
             <Board />
         </div>
     );
@@ -100,18 +100,18 @@ function Board() {
 
     return (
         <div className="flex flex-col h-screen items-center justify-center">
-            <div className="flex flex-col items-center justify-center w-screen p-[5lvh] ">
-                <div className="flex flex-row items-center justify-center h-[20dvh] w-[60dvh] border-t-2 border-l-2 border-r-2 border-solid border-black">
+            <div className="flex flex-col items-center justify-center w-[90lvh] p-[5lvh] ">
+                <div className="flex flex-row items-center justify-center h-[15lvh] w-[45lvh] border-t-2 border-l-2 border-r-2 border-solid border-black">
                     <Square letter={board[0]} setSquare={setSquare(0)} />
                     <Square letter={board[1]} setSquare={setSquare(1)} />
                     <Square letter={board[2]} setSquare={setSquare(2)} />
                 </div>
-                <div className="flex flex-row items-center justify-center h-[20dvh] w-[60dvh] border-l-2 border-r-2 border-solid border-black">
+                <div className="flex flex-row items-center justify-center h-[15lvh] w-[45lvh] border-l-2 border-r-2 border-solid border-black">
                     <Square letter={board[3]} setSquare={setSquare(3)} />
                     <Square letter={board[4]} setSquare={setSquare(4)} />
                     <Square letter={board[5]} setSquare={setSquare(5)} />
                 </div>
-                <div className="flex flex-row items-center justify-center h-[20dvh] w-[60dvh] border-b-2 border-l-2 border-r-2 border-solid border-black">
+                <div className="flex flex-row items-center justify-center h-[15lvh] w-[45lvh] border-b-2 border-l-2 border-r-2 border-solid border-black">
                     <Square letter={board[6]} setSquare={setSquare(6)} />
                     <Square letter={board[7]} setSquare={setSquare(7)} />
                     <Square letter={board[8]} setSquare={setSquare(8)} />
